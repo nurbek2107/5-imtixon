@@ -3,12 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="public/img/favicon-32x32.png">
+    <title>audiophile</title>
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/style.css">
 </head>
-<body>
-    
+<body >
+    <header class="bg-black">
+        <div class="container">
+    <div class="navbar  pl-6 pr-6 ">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul id tabindex="0"
+                    class="menu menu-lg  dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52 bg-black">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">HEADPHONES</a></li>
+                    <li><a href="#">SPEAKERS</a></li>
+                    <li><a href="#">EARPHONES</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="cursor-pointer">audiophile</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HEADPHONES</a></li>
+                <li><a href="#">SPEAKERS</a></li>
+                <li><a href="#">EARPHONES</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a id="cart" class="cursor-pointer"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
+            </div>
+    </header>
+
     <script src="./main.js"></script>
 </body>
 </html>
