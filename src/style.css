@@ -1,9 +1,12 @@
+::-webkit-scrollbar {
+    width: 0px;
+}
 @font-face {
     font-display: swap;
     font-family: 'Manrope-400';
     font-style: normal;
     font-weight: 400;
-    src: url('./public/font/manrope-v15-latin-regular.woff2') format('woff2');
+    src: url('../public/font/manrope-v15-latin-regular.woff2') format('woff2');
 }
 @font-face {
     font-display: swap;
@@ -20,9 +23,209 @@
     src: url('../public/font/manrope-v15-latin-700.woff2') format('woff2');
 }
 .container{
-    max-width: 1400px;
+    max-width: 1100px;
     margin: 0px auto;
 }
-.menu{
-    /* font-family: 'Manrope-500'; */
+
+
+#nav ul li a{
+    font-family: 'Manrope-700';
+    font-size: 13px;
+}
+header{
+    background:#131313;
+}
+.navbar{
+    border-bottom: 2px solid #ffffff48;
+}
+header .card{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+header .card .left{
+    width: 398px;
+}
+header .card  p{
+    font-family: 'Manrope-400';
+}
+header .card p:nth-child(1) {
+    font-family: 'Manrope-400';
+    font-size: 14px;
+    letter-spacing: 10px; 
+}
+
+header .card h1{
+    margin-top: 24px;
+    font-size: 56px;
+    line-height: 58px;
+    color:#fff;
+    font-family: 'Manrope-700';
+}
+header .card .left p{
+    margin-top: 24px;
+    font-family: 'Manrope-400';
+    line-height: 25px;
+    font-size: 15px;
+    width: 339px;
+}
+
+header .card .left button{
+transition: all .5s ease;
+}
+header .card .left button {
+    margin-top: 40px;
+    transition: all .5s ease;
+}
+
+
+main{
+    background:#FAFAFA;
+    padding-bottom: 200px;
+}
+main .block1{
+    padding-top: 120px;
+}
+main .block1 .left h1{
+    font-family: 'Manrope-700';
+} 
+main .block1 .left{
+    width: 350px;
+    height: 234px;
+    background: #F1F1F1;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+main .block2{
+    background:#D87D4A;
+    margin-top: 168px;     
+    position: relative;
+    border-radius:8px;
+}
+main .block2 button {
+    transition: all .5s ease;
+}
+main .block2 .right {
+    width: 349px;
+    transition: all .5s ease;
+}
+main .block2 .left img:nth-child(1) {
+    /* z-index: 10; */
+}
+main .block2 .left  img:nth-child(2){
+    position: absolute;
+    top: -100px;
+    /* z-index: 1; */
+}
+main .block2 .right h1{
+    font-family: 'Manrope-700';
+    line-height: 58px;
+}
+main .block2 .right p{
+    margin-top: 24px;
+    font-family: 'Manrope-400';
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 24px;
+}
+main .block3{
+    position: relative;
+}
+main .block4 .right {
+    position: relative;
+    width: 540px; 
+    background:#F1F1F1;
+    height: 320px;
+    border-radius:8px;
+}
+main .block3   button {
+    transition: all .5s ease;
+    border:2px solid black;
+    margin-left: 98px;
+    position: absolute;
+    top: 230px;
+}
+main .block3 button:hover{
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+main .block3 h1{
+    color: black;
+    font-family: 'Manrope-700';
+    font-size: 38px;
+    margin-left: 98px;
+    position: absolute;
+        top: 160px;
+}
+
+main .block4  .right button {
+    transition: all .5s ease;
+    border: 2px solid black;
+    margin-left: 98px;
+    position: absolute;
+    top: 180px;
+}
+
+main .block4 .right button:hover {
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+
+main .block4 .right h1 {
+    color: black;
+    font-family: 'Manrope-700';
+    font-size: 38px;
+    margin-left: 98px;
+    position: absolute;
+    top: 100px;
+}
+
+main .block5{
+    margin-top: 200px;
+}
+main .block5 .left{
+width: 435px;
+}
+
+main .block5 .left h1{
+    font-family: 'Manrope-700';
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.5px;
+    color:#131313;
+    margin-bottom: 32px;
+}
+main .block5 .left h1 span{
+    color: #D87D4A;
+}
+
+main .block5 .left p{
+    font-family: 'Manrope-400';
+    color:gray;
+    line-height: 25px;
+    font-size: 15px;
+}
+footer{
+    padding-top: 75px;
+    background-color: #131313;
+}
+footer .top{
+    display: flex;
+    justify-content: space-between;
+}
+footer .bottom {
+    margin-top: 36px;
+}
+footer .top .right a{
+    font-family: 'Manrope-700';
+    color:white;
+    font-size: 13px;
+    letter-spacing: 2px;
+    transition: all .5s ease;
+}
+footer .top .right a:hover{
+color: #f1f1f18e;
+}
+footer .bottom .left{
+    width: 540px;
+
 }
