@@ -1,17 +1,17 @@
-fetch("http://localhost:3000/products")
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(products => updateProducts(products))
-    .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
-    });
 
-function updateProducts(products) {
-    products.forEach(product => {
-        console.log(product);
-    });
-}
+const cartBtn = document.getElementById("cart");
+const modal = document.getElementById("modal");
+const addHidden = () => {
+    modal.classList.add("hidden");
+};
+const modalTogle = () => {
+    if (modal.classList.contains("hidden")) {
+        modal.classList.remove("hidden");
+    } else modal.classList.add("hidden");
+};
+cartBtn.addEventListener("click", modalTogle);
+document.addEventListener("keydown", (e) => {
+    if (e.key == "Escape") {
+        addHidden();
+    }
+});
