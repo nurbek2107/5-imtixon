@@ -343,11 +343,53 @@ main .card3 h1{
 
 
 
+.car5{
+    background-color: #ffffff;
+    width: 377px;
+    /* height: 50px; */
+    position: absolute;
+    border-radius: 8px;
+    top: 100px;
+    z-index: 10;
+}
 
+.remove{
+    text-decoration: underline;
+    cursor: pointer;
+}
+        .car5 {
+            transition: opacity 0.5s ease, display 0s linear 0.5s;
+            opacity: 0;
+            display: none;
+        }
+    
+        .car5.visible {
+            opacity: 1;
+            display: block;
+            transition: opacity 0.5s ease;
 
-
-
-
+        }
+.car5 .center  p{
+    color:black;
+    font-family: 'Manrope-500';
+}  
+.car5 .center p:nth-child(2){
+    font-family: 'Manrope-700';
+}
+.car5 .bottom button{
+    transition: all .5s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
 
 
 
